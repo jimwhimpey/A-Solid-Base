@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <title>{Title}</title>
+
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+		<link rel="stylesheet" href="./reset.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="./style.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif" />
+
+		<script src="http://www.google.com/jsapi"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			
+			google.load("jquery", "1");
+			
+			google.setOnLoadCallback(function(){
+				
+				$(".post a img").hover(function(){
+					$(this).animate({"top": "-10px"}, 200, "swing");
+				});
+				
+				$(".post a img").mouseout(function(){
+					$(this).animate({"top": "0"}, 500, "swing");
+				});
+				
+			});
+			
+		</script>
+
+    </head>
+
+    <body>
+
+		<div id="header">
+			<h1><a href="/">A Solid Base</a></h1>
+			<p>Editorially chosen widescreen desktop wallpaper. Direct downloads, nothing smaller than <span>1920<span>x</span>1200</span>. by <a href="#">Jim Whimpey</a>.</p>
+		</div>
+
+		<div id="content">
+
+			<div class="post">
+				<a href="#" class="link"> 
+					<img src="demo/wall-10.jpg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+			
+			<div class="post">
+				<a href="#" class="link">
+					<img src="demo/wall-11.jpg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+			
+			<div class="post">
+				<a href="#" class="link">
+					<img src="demo/wall-12.jpg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+			
+			<div class="post">
+				<a href="#" class="link">
+					<img src="demo/wall-13.jpg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+			
+			<div class="post">
+				<a href="#" class="link">
+					<img src="demo/wall-14.jpeg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+			
+			<div class="post">
+				<a href="#" class="link">
+					<img src="demo/wall-15.jpg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+			
+			<div class="post">
+				<a href="#" class="link">
+					<img src="demo/wall-16.jpg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+			
+			<div class="post">
+				<a href="#" class="link">
+					<img src="demo/wall-17.jpg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+			
+			<div class="post">
+				<a href="#" class="link">
+					<img src="demo/wall-18.jpg" class="wallpaper" alt="" />
+				</a>
+				<p class="attribution">by <a href="#">*spacecoyote</a></p>
+				<p class="permalink"><a href="#">&infin;</a></p>
+			</div>
+
+		</div>
+
+		<div id="navigation">
+			
+            <a href="#" id="nav-older"><span>&larr;</span> Older</a>
+            
+ 			<a href="#" id="nav-newer">Newer <span>&rarr;</span></a>
+
+		</div>
+		
+		<div id="footer">
+			<a href="/">A solid base</a> to build on. Make a <a href="/submit">suggestion</a>.
+		</div>
+	
+				<!--{block:Posts}
+			
+					{block:Photo}
+			
+						<div class="photo post {TagsAsClasses}">
+					
+							{LinkOpenTag}
+						    	<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+							{LinkCloseTag}
+				
+							{block:Caption}
+	                            <p>{Caption}</p>
+	                        {/block:Caption}
+   
+							<div class="permalink">
+								<a href="{Permalink}">&infin;</a>
+							</div>
+
+						</div>
+               
+	                {/block:Photo}
+	
+				{/block:Posts}
+
+				{block:Pagination}
+
+					<div id="navigation">
+  
+						{block:PreviousPage}
+		                	<a href="{PreviousPage}" id="nav-newer">Newer &rarr;</a>
+			            {/block:PreviousPage}
+
+			            {block:NextPage}
+			                <a href="{NextPage}" id="nav-older">&larr; Older</a>
+			            {/block:NextPage}
+
+					</div>
+
+				 {/block:Pagination}
+			
+				{block:PermalinkPagination}
+			
+					<div id="navigation">
+				
+						{block:PreviousPost}
+		                	<a href="{PreviousPost}" id="nav-older">&larr; Older</a>
+			            {/block:PreviousPost}
+
+			            {block:NextPost}
+			                <a href="{NextPost}" id="nav-newer">Newer &rarr;</a>
+			            {/block:NextPost}
+
+					</div>
+		
+				{/block:PermalinkPagination}-->
+
+	</body>
+
+</html>
