@@ -10,7 +10,6 @@
 
         <link rel="shortcut icon" href="{Favicon}">
         <link rel="alternate" type="application/rss+xml" href="{RSS}">
-		<link rel="stylesheet" href="./reset.css" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="./style.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif" />
 
@@ -44,148 +43,60 @@
 		</div>
 
 		<div id="content">
+			
+			{block:Posts}
+		
+				{block:Photo}
 
-			<div class="post">
-				<a href="#" class="link"> 
-					<img src="demo/wall-10.jpg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
-			
-			<div class="post">
-				<a href="#" class="link">
-					<img src="demo/wall-11.jpg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
-			
-			<div class="post">
-				<a href="#" class="link">
-					<img src="demo/wall-12.jpg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
-			
-			<div class="post">
-				<a href="#" class="link">
-					<img src="demo/wall-13.jpg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
-			
-			<div class="post">
-				<a href="#" class="link">
-					<img src="demo/wall-14.jpeg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
-			
-			<div class="post">
-				<a href="#" class="link">
-					<img src="demo/wall-15.jpg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
-			
-			<div class="post">
-				<a href="#" class="link">
-					<img src="demo/wall-16.jpg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
-			
-			<div class="post">
-				<a href="#" class="link">
-					<img src="demo/wall-17.jpg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
-			
-			<div class="post">
-				<a href="#" class="link">
-					<img src="demo/wall-18.jpg" class="wallpaper" alt="" />
-				</a>
-				<p class="attribution">by <a href="#">*spacecoyote</a></p>
-				<p class="permalink"><a href="#">&infin;</a></p>
-			</div>
+					<div class="post">
+						<a href="{LinkURL}" class="link"> 
+							<img src="{PhotoURL-400}" class="wallpaper" alt="Wallpaper" />
+						</a>
+						<p class="attribution">{Caption}</p>
+						<p class="permalink"><a href="{Permalink}">&infin;</a></p>
+					</div>
+					
+                {/block:Photo}
+
+			{/block:Posts}
 
 		</div>
+		
+		{block:Pagination}
 
-		<div id="navigation">
+			<div id="navigation">
+
+				{block:PreviousPage}
+					<a href="{PreviousPage}" id="nav-older"><span>&larr;</span> Older</a>
+	            {/block:PreviousPage}
+
+	            {block:NextPage}
+					<a href="{NextPage}" id="nav-newer">Newer <span>&rarr;</span></a>
+	            {/block:NextPage}
+
+			</div>
+
+		{/block:Pagination}
+
+		{block:PermalinkPagination}
 			
-            <a href="#" id="nav-older"><span>&larr;</span> Older</a>
-            
- 			<a href="#" id="nav-newer">Newer <span>&rarr;</span></a>
+			<div id="navigation">
+		
+				{block:PreviousPost}
+					<a href="{PreviousPost}" id="nav-older"><span>&larr;</span> Older</a>
+	            {/block:PreviousPost}
 
-		</div>
+	            {block:NextPost}
+					<a href="{NextPost}" id="nav-newer">Newer <span>&rarr;</span></a>
+	            {/block:NextPost}
+
+			</div>
+		
+		{/block:PermalinkPagination}
 		
 		<div id="footer">
 			<a href="/">A solid base</a> to build on. Make a <a href="/submit">suggestion</a>.
 		</div>
-	
-				<!--{block:Posts}
-			
-					{block:Photo}
-			
-						<div class="photo post {TagsAsClasses}">
-					
-							{LinkOpenTag}
-						    	<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
-							{LinkCloseTag}
-				
-							{block:Caption}
-	                            <p>{Caption}</p>
-	                        {/block:Caption}
-   
-							<div class="permalink">
-								<a href="{Permalink}">&infin;</a>
-							</div>
-
-						</div>
-               
-	                {/block:Photo}
-	
-				{/block:Posts}
-
-				{block:Pagination}
-
-					<div id="navigation">
-  
-						{block:PreviousPage}
-		                	<a href="{PreviousPage}" id="nav-newer">Newer &rarr;</a>
-			            {/block:PreviousPage}
-
-			            {block:NextPage}
-			                <a href="{NextPage}" id="nav-older">&larr; Older</a>
-			            {/block:NextPage}
-
-					</div>
-
-				 {/block:Pagination}
-			
-				{block:PermalinkPagination}
-			
-					<div id="navigation">
-				
-						{block:PreviousPost}
-		                	<a href="{PreviousPost}" id="nav-older">&larr; Older</a>
-			            {/block:PreviousPost}
-
-			            {block:NextPost}
-			                <a href="{NextPost}" id="nav-newer">Newer &rarr;</a>
-			            {/block:NextPost}
-
-					</div>
-		
-				{/block:PermalinkPagination}-->
 
 	</body>
 
