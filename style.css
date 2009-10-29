@@ -116,7 +116,7 @@
 				margin-top: 5px;
 				float: right;
 				text-align: right;
-				margin-right: 3px;
+				margin-right: 18px;
 				}
 					
 				.post .attribution a { 
@@ -126,14 +126,17 @@
 					font-style: normal;
 					}
 					
-					.post .attribution a:hover { color: #000; }
+					.post .attribution a:hover, .post .permalink a:hover { color: #000; }
 					
-					.post .attribution a.permalink {
-						letter-spacing: 0;
-						font-family: Georgia, Times, serif;	
-						text-transform: lowercase;
-						font-style: italic;
-						}
+			.post .permalink {
+				position: absolute;
+				bottom: 2px;
+				right: 3px;
+				font-family: Helvetica, Arial, sans-serif;	
+				font-size: 14px;
+				}
+				
+				.post .permalink a { color: #004080; }
 		
 				
 		
