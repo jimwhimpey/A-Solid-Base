@@ -10,7 +10,7 @@
 
         <link rel="shortcut icon" href="{Favicon}">
         <link rel="alternate" type="application/rss+xml" href="{RSS}">
-		<link rel="stylesheet" href="./style.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="http://static.tumblr.com/ttz4bff/fuiks9kht/style.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif" />
 
 		<script src="http://www.google.com/jsapi"></script>
@@ -39,7 +39,7 @@
 
 		<div id="header">
 			<h1><a href="/">A Solid Base</a></h1>
-			<p>Editorially chosen widescreen desktop wallpaper. Direct downloads, nothing smaller than <span>1920<span>x</span>1200</span>. by <a href="#">Jim Whimpey</a>.</p>
+			<p>Editorially chosen widescreen desktop wallpaper. Direct downloads, nothing smaller than <span>1920<span>x</span>1200</span>. by <a href="http://log.valhallaisland.com">Jim Whimpey</a>.</p>
 		</div>
 
 		<div id="content">
@@ -52,11 +52,15 @@
 						<a href="{LinkURL}" class="link"> 
 							<img src="{PhotoURL-400}" class="wallpaper" alt="Wallpaper" />
 						</a>
-						<p class="attribution">{Caption}</p>
+						<div class="attribution">{Caption}</div>
 						<p class="permalink"><a href="{Permalink}">&infin;</a></p>
 					</div>
 					
                 {/block:Photo}
+
+				{block:Text}
+				
+				{/block:Text}
 
 			{/block:Posts}
 
@@ -95,7 +99,7 @@
 		{/block:PermalinkPagination}
 		
 		<div id="footer">
-			<a href="/">A solid base</a> to build on. Make a <a href="/submit">suggestion</a>.
+			<a href="/" class="site">A solid base</a> to build on. Make a <a href="/submit">suggestion</a>.
 		</div>
 
 	</body>
