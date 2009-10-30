@@ -181,6 +181,29 @@
 				}
 	
 	
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		TEXT POST for the SUBMIT PAGE
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+	.text { width: 600px; }
+	
+		.text h2 {
+			font-family: Helvetica, Arial, serif;
+			font-weight: bold;
+			font-size: 22px;
+			margin: 0 0 20px;
+			}
+		
+		.text p {
+			font-family: Georgia, Times, serif;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 1.6em;
+			margin: 0 0 20px 0;
+			}
+	
+	
+	
 	
 /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		FOOTER

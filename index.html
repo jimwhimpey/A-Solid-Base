@@ -10,7 +10,7 @@
 
         <link rel="shortcut icon" href="{Favicon}">
         <link rel="alternate" type="application/rss+xml" href="{RSS}">
-		<link rel="stylesheet" href="http://static.tumblr.com/ttz4bff/GJ6ks9mis/style.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="http://static.tumblr.com/ttz4bff/EkPksbpe5/style.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif" />
 
 		<script src="http://www.google.com/jsapi"></script>
@@ -39,7 +39,9 @@
 
 		<div id="header">
 			<h1><a href="/">A Solid Base</a></h1>
-			<p>Editorially chosen widescreen desktop wallpaper. Direct downloads, nothing smaller than <span>1920<span>x</span>1200</span>. by <a href="http://log.valhallaisland.com">Jim Whimpey</a>.</p>
+			{block:Description}
+				<p>{Description}</p>
+			{/block:Description}
 		</div>
 
 		<div id="content">
@@ -60,7 +62,15 @@
 
 				{block:Text}
 					
-					<div style="width: 600px;">{Body}</div>
+					<div class="text">
+						
+						{block:Title}
+							<h2>{Title}</h2>
+						{/block:Title}
+						
+						{Body}
+					
+					</div>
 				
 				{/block:Text}
 
@@ -72,13 +82,13 @@
 
 			<div id="navigation">
 
-				{block:PreviousPage}
-					<a href="{PreviousPage}" id="nav-older"><span>&larr;</span> Older</a>
-	            {/block:PreviousPage}
-
-	            {block:NextPage}
-					<a href="{NextPage}" id="nav-newer">Newer <span>&rarr;</span></a>
+				{block:NextPage}
+					<a href="{NextPage}" id="nav-older"><span>&larr;</span> Older</a>
 	            {/block:NextPage}
+
+				{block:PreviousPage}
+					<a href="{PreviousPage}" id="nav-newer">Newer <span>&rarr;</span></a>
+	            {/block:PreviousPage}
 
 			</div>
 
