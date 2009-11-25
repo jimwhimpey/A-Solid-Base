@@ -202,6 +202,46 @@
 			margin: 0 0 20px 0;
 			}
 	
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		NOTES
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+	.notes {
+		clear: left;
+		line-height: 1.5em;
+		font-family: Georgia, Helvetica, Arial, Times, serif;
+		font-weight: normal;
+		font-size: 13px;
+		margin: 0 0 50px 0;
+		color: #464646;
+		}
+	
+		.notes li {
+			margin: 0 0 10px 0;
+			}
+	
+		.notes a { color: #004080; }
+	
+			.notes a:hover { border-bottom: 1px solid #004080; }
+	
+		.notes img {
+			border: 1px solid #000;
+			position: relative;
+			top: 4px;
+			}
+		
+		.notes blockquote {
+			margin: 10px 0 0 25px;
+			border-left: 1px solid #BABABA;
+			padding: 0 0 0 10px;
+			font-style: italic;
+			color: #828282;
+			}
+		
+			.notes blockquote a { color: #3B7CB6; }
+		
+				.notes blockquote a:hover { border-bottom: 1px solid #3B7CB6; }
 	
 	
 	
