@@ -10,145 +10,147 @@
 
 				<link rel="shortcut icon" href="{Favicon}">
 				<link rel="alternate" type="application/rss+xml" href="{RSS}">
-				<link rel="stylesheet" href="http://static.tumblr.com/ttz4bff/yvzl58kyn/style.css" type="text/css" media="screen" charset="utf-8" />
+				<link rel="stylesheet" href="http://static.tumblr.com/ttz4bff/2nKl5dzqx/style.css" type="text/css" media="screen" charset="utf-8" />
 				<link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif" />
 
 		</head>
 
 		<body>
 
-		<div id="header">
-			<h1><a href="/">A Solid Base</a></h1>
-			{block:Description}
-				<p>{Description}</p>
-			{/block:Description}
-			<h2>Colours</h2>
-			<ul class="colours">
-				<li class="red"><a href="/tagged/red">Red</a></li>
-				<li class="pink"><a href="/tagged/pink">Pink</a></li>
-				<li class="purple"><a href="/tagged/purple">Purple</a></li>
-				<li class="blue"><a href="/tagged/blue">Blue</a></li>
-				<li class="green"><a href="/tagged/green">Green</a></li>
-				<li class="yellow"><a href="/tagged/yellow">Yellow</a></li>
-				<li class="orange"><a href="/tagged/orange">Orange</a></li>
-				<li class="brown"><a href="/tagged/brown">Brown</a></li>
-				<li class="black"><a href="/tagged/black">Black</a></li>
-				<li class="white"><a href="/tagged/white">White</a></li>
-			</ul>
-			<h2>Styles</h2>
-			<ul class="styles">
-				<li><a href="/tagged/abstract">abstract</a></li>
-				<li><a href="/tagged/rendering">rendering</a></li>
-				<li><a href="/tagged/texture">texture</a></li>
-				<li><a href="/tagged/space">space</a></li>
-				<li><a href="/tagged/nature">nature</a></li>
-				<li><a href="/tagged/animals">animals</a></li>
-				<li><a href="/tagged/focal+point">focal point</a></li>
-				<li><a href="/tagged/snow">snow</a></li>
-				<li><a href="/tagged/bokeh">bokeh</a></li>
-				<li><a href="/tagged/water">water</a></li>
-				<li><a href="/tagged/wood">wood</a></li>
-				<li><a href="/tagged/landscape">landscape</a></li>
-				<li><a href="/tagged/city">city</a></li>
-				<li><a href="/tagged/night">night</a></li>
-				<li><a href="/tagged/light">light</a></li>
-				<li><a href="/tagged/rain">rain</a></li>
-				<li><a href="/tagged/sunset">sunset</a></li>
-				<li><a href="/tagged/fire">fire</a></li>
-				<li><a href="/tagged/macro">macro</a></li>
-			</ul>
-			<h3>Make a <a href="/submit/photo">suggestion</a></h3>
-		</div>
+			<div id="header">
+				<h1><a href="/">A Solid Base</a></h1>
+				{block:Description}
+					<p>{Description}</p>
+				{/block:Description}
+				<h2>Colours</h2>
+				<ul class="colours">
+					<li class="red"><a href="/tagged/red">Red</a></li>
+					<li class="pink"><a href="/tagged/pink">Pink</a></li>
+					<li class="purple"><a href="/tagged/purple">Purple</a></li>
+					<li class="blue"><a href="/tagged/blue">Blue</a></li>
+					<li class="green"><a href="/tagged/green">Green</a></li>
+					<li class="yellow"><a href="/tagged/yellow">Yellow</a></li>
+					<li class="orange"><a href="/tagged/orange">Orange</a></li>
+					<li class="brown"><a href="/tagged/brown">Brown</a></li>
+					<li class="black"><a href="/tagged/black">Black</a></li>
+					<li class="white"><a href="/tagged/white">White</a></li>
+				</ul>
+				<h2>Styles</h2>
+				<ul class="styles">
+					<li><a href="/tagged/abstract">abstract</a></li>
+					<li><a href="/tagged/rendering">rendering</a></li>
+					<li><a href="/tagged/texture">texture</a></li>
+					<li><a href="/tagged/space">space</a></li>
+					<li><a href="/tagged/nature">nature</a></li>
+					<li><a href="/tagged/animals">animals</a></li>
+					<li><a href="/tagged/focal+point">focal point</a></li>
+					<li><a href="/tagged/snow">snow</a></li>
+					<li><a href="/tagged/bokeh">bokeh</a></li>
+					<li><a href="/tagged/water">water</a></li>
+					<li><a href="/tagged/wood">wood</a></li>
+					<li><a href="/tagged/landscape">landscape</a></li>
+					<li><a href="/tagged/city">city</a></li>
+					<li><a href="/tagged/night">night</a></li>
+					<li><a href="/tagged/light">light</a></li>
+					<li><a href="/tagged/rain">rain</a></li>
+					<li><a href="/tagged/sunset">sunset</a></li>
+					<li><a href="/tagged/fire">fire</a></li>
+					<li><a href="/tagged/macro">macro</a></li>
+				</ul>
+				<h3>Make a <a href="/submit/photo">suggestion</a></h3>
+			</div>
 
-		<div id="content">
-			
-			{block:Posts}
+			<div id="content">
 		
-				{block:Photo}
-			
-					<div class="post">
-						<a href="{LinkURL}" class="link"> 
-							<img src="{PhotoURL-500}" class="wallpaper" alt="Wallpaper" />
-						</a>
-						<div class="meta">
-							<div class="permalink"><a href="{Permalink}">&infin;</a></div>
-							<div class="attribution">{Caption}</div>
-							<div class="more">More 
-								{block:HasTags}
-									{block:Tags}
-										<a href="{TagURL}">{Tag}</a>
-									{/block:Tags}
-								{/block:HasTags}
+				{block:Posts}
+	
+					{block:Photo}
+		
+						<div class="post">
+							<a href="{LinkURL}" class="link"> 
+								<img src="{PhotoURL-500}" class="wallpaper" alt="Wallpaper" />
+							</a>
+							<div class="meta">
+								<div class="permalink"><a href="{Permalink}">&infin;</a></div>
+								<div class="attribution">{Caption}</div>
+								<div class="more">More 
+									{block:HasTags}
+										{block:Tags}
+											<a href="{TagURL}">{Tag}</a>
+										{/block:Tags}
+									{/block:HasTags}
+								</div>
 							</div>
 						</div>
-					</div>
-					
-					{block:PostNotes}
-						<div class="notes">
-							{PostNotes}
-						</div>
-					{/block:PostNotes}
-			
-				{/block:Photo}
 				
-				{block:Text}
-					
-					<div class="text">
-						{block:Title}
-							<h2>{Title}</h2>
-						{/block:Title}
-						{Body}
-					</div>
-					
-				{/block:Text}
-			
-			{block:Posts}
-
-		</div>
+						{block:PostNotes}
+							<div class="notes">
+								{PostNotes}
+							</div>
+						{/block:PostNotes}
 		
-		{block:Pagination}
-
-			<div id="navigation">
-
-				{block:NextPage}
-					<a href="{NextPage}" id="nav-older"><span>&larr;</span> Older</a>
-	            {/block:NextPage}
-
-				{block:PreviousPage}
-					<a href="{PreviousPage}" id="nav-newer">Newer <span>&rarr;</span></a>
-	            {/block:PreviousPage}
+					{/block:Photo}
+			
+					{block:Text}
+				
+						<div class="text">
+							{block:Title}
+								<h2>{Title}</h2>
+							{/block:Title}
+							{Body}
+						</div>
+				
+					{/block:Text}
+		
+				{block:Posts}
 
 			</div>
+	
+			{block:Pagination}
 
-		{/block:Pagination}
+				<div id="navigation">
 
-		{block:PermalinkPagination}
+					{block:NextPage}
+						<a href="{NextPage}" id="nav-older"><span>&larr;</span> Older</a>
+		            {/block:NextPage}
+
+					{block:PreviousPage}
+						<a href="{PreviousPage}" id="nav-newer">Newer <span>&rarr;</span></a>
+		            {/block:PreviousPage}
+
+				</div>
+
+			{/block:Pagination}
+
+			{block:PermalinkPagination}
+		
+				<div id="navigation">
+	
+					{block:PreviousPost}
+						<a href="{PreviousPost}" id="nav-older"><span>&larr;</span> Older</a>
+		            {/block:PreviousPost}
+
+		            {block:NextPost}
+						<a href="{NextPost}" id="nav-newer">Newer <span>&rarr;</span></a>
+		            {/block:NextPost}
+
+				</div>
+	
+			{/block:PermalinkPagination}
 			
-			<div id="navigation">
-		
-				{block:PreviousPost}
-					<a href="{PreviousPost}" id="nav-older"><span>&larr;</span> Older</a>
-	            {/block:PreviousPost}
+			<div id="footer"><a href="/" class="site">A solid base</a> to build on.</div>
+			
+			<div style="clear: both; width: 100%;"></div>
 
-	            {block:NextPost}
-					<a href="{NextPost}" id="nav-newer">Newer <span>&rarr;</span></a>
-	            {/block:NextPost}
-
-			</div>
-		
-		{/block:PermalinkPagination}
-
-		<div id="footer"><a href="/" class="site">A solid base</a> to build on.</div>
-
-		<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
-		try {
-		var pageTracker = _gat._getTracker("UA-15817175-3");
-		pageTracker._trackPageview();
-		} catch(err) {}</script>
+			<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+			try {
+			var pageTracker = _gat._getTracker("UA-15817175-3");
+			pageTracker._trackPageview();
+			} catch(err) {}</script>
 
 	</body>
 
