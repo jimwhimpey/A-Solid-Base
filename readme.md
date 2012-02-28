@@ -1,0 +1,1 @@
+The Tumblr theme for [A Solid Base](http://solidbase.tumblr.com/), a blog featuring the best editorially chosen desktop wallpaper. It's in need of an update now that Tumblr themes support larger image sizes and now that everyone uses iPads instead of computers.
