@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-		<head>
-
-				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-				<title>{Title} - The best widescreen desktop wallpaper</title>
-
-				<link rel="shortcut icon" href="{Favicon}">
-				<link rel="alternate" type="application/rss+xml" href="{RSS}">
-				<link rel="stylesheet" href="http://static.tumblr.com/ttz4bff/2Qsllc2yw/style.css" type="text/css" media="screen" charset="utf-8" />
-				<link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif" />
-
-		</head>
-
-		<body>
+{block:tumblrThemr}
 
 			<div id="header">
 				<h1><a href="/">A Solid Base</a></h1>
@@ -57,8 +40,7 @@
 					<li><a href="/tagged/fire">fire</a></li>
 					<li><a href="/tagged/macro">macro</a></li>
 				</ul>
-				<h3><a href="/submit/photo">Make a suggestion</a></h3>
-				<h3 id="twitter"><a href="http://twitter.com/asolidbase">Follow on Twitter</a></h3>
+				<h3>Make a <a href="/submit/photo">suggestion</a></h3>
 			</div>
 
 			<div id="content">
@@ -113,11 +95,11 @@
 
 					{block:NextPage}
 						<a href="{NextPage}" id="nav-older"><span>&larr;</span> Older</a>
-		            {/block:NextPage}
+					{/block:NextPage}
 
 					{block:PreviousPage}
 						<a href="{PreviousPage}" id="nav-newer">Newer <span>&rarr;</span></a>
-		            {/block:PreviousPage}
+					{/block:PreviousPage}
 
 				</div>
 
@@ -143,16 +125,7 @@
 			
 			<div style="clear: both; width: 100%;"></div>
 
-			<script type="text/javascript">
-			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-			</script>
-			<script type="text/javascript">
-			try {
-			var pageTracker = _gat._getTracker("UA-15817175-3");
-			pageTracker._trackPageview();
-			} catch(err) {}</script>
 
-	</body>
 
-</html>
+	
+{/block:tumblrThemr} 
