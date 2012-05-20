@@ -111,11 +111,11 @@
 			<div id="navigation">
 
 				{block:NextPage}
-					<a href="{NextPage}" id="nav-older"><span>&larr;</span> Older</a>
+					<a href="{NextPage}" id="nav-older"><span>&larr;</span> Previous Page</a>
 				{/block:NextPage}
 
 				{block:PreviousPage}
-					<a href="{PreviousPage}" id="nav-newer">Newer <span>&rarr;</span></a>
+					<a href="{PreviousPage}" id="nav-newer">Next Page <span>&rarr;</span></a>
 				{/block:PreviousPage}
 
 			</div>
@@ -127,20 +127,17 @@
 			<div id="navigation">
 	
 				{block:PreviousPost}
-					<a href="{PreviousPost}" id="nav-older"><span>&larr;</span> Older</a>
-	            {/block:PreviousPost}
+					<a href="{PreviousPost}" id="nav-older"><span>&larr;</span> Previous Post</a>
+				{/block:PreviousPost}
 
-	            {block:NextPost}
-					<a href="{NextPost}" id="nav-newer">Newer <span>&rarr;</span></a>
-	            {/block:NextPost}
+				{block:NextPost}
+					<a href="{NextPost}" id="nav-newer">Next Post <span>&rarr;</span></a>
+				{/block:NextPost}
 
 			</div>
 	
 		{/block:PermalinkPagination}
 			
 		<div id="footer"><a href="/" class="site">A solid base</a> to build on.</div>
-			
-		<div style="clear: both; width: 100%;"></div>
-
 	
 {/block:tumblrThemr} 

@@ -49,7 +49,7 @@
 		background: #D4D4D4 url(noise.png);
 		body {
 			width: 1000px;
-			margin: 50px auto;
+			margin: 100px auto;
 			background: none;
 			a { text-decoration: none; }
 		}
@@ -73,7 +73,7 @@
 	#header {
 		width: 100%;
 		overflow: hidden;
-		margin: 0 0 120px 0;
+		margin: 0 0 140px 0;
 		h1 {
 			font-family: 'Chunk', Georgia, Times, serif;
 			font-weight: bold;
@@ -176,7 +176,7 @@
 	
 		#content {
 			width: 100%;
-			margin: 0 0 50px 0;
+			margin: 0 0 70px 0;
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-weight: bold;
 			font-size: 13px;
@@ -184,7 +184,7 @@
 				position: relative;
 				width: 100%;
 				overflow: hidden;
-				margin: 0 0 100px 0;
+				margin: 0 0 130px 0;
 				.display, .ipad, .iphone {
 					position: relative;
 					float: left;
@@ -265,6 +265,7 @@
 							display: inline;
 							font-size: 16px;
 						}
+						a:hover { border-bottom: 1px solid #000; }
 					}
 					.more {
 						color: #666;
@@ -276,39 +277,37 @@
 		
 	
 /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-		NAVIGATION
-	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */	
+			NAVIGATION
+		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */	
 	
 	#navigation {
-		width: 500px;
-		margin-bottom: 80px;
-		float: left;
-		}
-	
-		#navigation a {
-			background: #333;
-			font-size: 14px;
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 120px;
+		a {
+			float: left;
+			background: #666;
+			font-size: 18px;
 			text-transform: uppercase;
 			padding: 8px 10px;
-			border: 1px solid #333;
+			border: 1px solid #666;
 			-moz-border-radius: 8px;
 			-webkit-border-radius: 8px;
 			border-radius: 8px;
 			line-height: 1em;
 			color: #CCC;
-			}
-			
-			#navigation a:hover {
+			&:hover {
 				background: #555;
 				border: 1px solid #555;
-				}
-		
-			#navigation #nav-newer { margin-left: 20px; }
+			}
+		}
+		#nav-newer { margin-left: 50px; }
+	}	
 	
 	
 /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-		TEXT POST for the SUBMIT PAGE
-	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+			TEXT POST for the SUBMIT PAGE
+		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 	
 	.text { width: 100%; overflow: hidden; }
 	
@@ -368,19 +367,22 @@
 	
 	
 /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-		FOOTER
-	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+			FOOTER
+		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 	
 	#footer {
+		display: none;
 		font-size: 16px;
 		text-shadow: #fff 1px 1px 0;
 		color: #111;
 		width: 500px;
 		float: left;
-		}
-		
-		#footer a {
+		a {
 			font-size: 18px;
 			font-family: 'Chunk', Georgia, Times, serif;
 			text-transform: uppercase;
-			}
+		}
+	}
+	
+	
+	
