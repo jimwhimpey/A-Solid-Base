@@ -20,6 +20,12 @@
 			MIXINS
 		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+		@mixin border-radius($radius) {
+			-webkit-border-radius: $radius;
+			-moz-border-radius: $radius;
+			border-radius: $radius;	
+		}
+
 		@mixin tag { 
 			font-family: Consolas, Menlo, Monaco, Courier, monospace;
 			font-weight: normal;
@@ -27,9 +33,7 @@
 			color: #000;
 			background: #B3B3B3;
 			border: 1px solid #B3B3B3;
-			-webkit-border-radius: 10px;
-			-moz-border-radius: 10px;
-			border-radius: 8px;
+			@include border-radius(10px);
 			padding: 1px 6px;
 			margin: 0 0 0 3px;
 			text-shadow: #bbb 0 1px 0;
@@ -180,6 +184,16 @@
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-weight: bold;
 			font-size: 13px;
+			h2.tag-heading {
+				font-size: 30px;
+				margin: 0 0 100px 0;
+				span { 
+					@include tag;
+					@include border-radius(20px);
+					font-size: 30px;
+					padding: 4px 12px;
+				}
+			}
 		 	.post {
 				position: relative;
 				width: 100%;

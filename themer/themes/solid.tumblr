@@ -50,6 +50,10 @@
 
 		<div id="content">
 		
+			{block:TagPage}
+				<h2 class="tag-heading">Tag: <span>{Tag}</span></h2>
+			{/block:TagPage}
+		
 			{block:Posts}
 	
 				{block:Photo}
