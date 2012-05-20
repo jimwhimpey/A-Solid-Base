@@ -307,16 +307,16 @@ Made by Icelab and Jim Whimpey
     {block:Photo}
       <block:Photo>
         <PhotoAlt>{PhotoAlt}</PhotoAlt>
+        <!-- Common -->
+        <PostType>{PostType}</PostType>
+        <Permalink>{Permalink}</Permalink>
+        <ShortURL>{ShortURL}</ShortURL>
+        <PostID>{PostID}</PostID>
+        <TagsAsClasses>{TagsAsClasses}</TagsAsClasses>
+        <PostNotesURL>{PostNotesURL}</PostNotesURL>
         {block:Caption}
         <block:Caption>
           <Caption><![CDATA[{Caption}]]></Caption>
-          <!-- Common -->
-          <PostType>{PostType}</PostType>
-          <Permalink>{Permalink}</Permalink>
-          <ShortURL>{ShortURL}</ShortURL>
-          <PostID>{PostID}</PostID>
-          <TagsAsClasses>{TagsAsClasses}</TagsAsClasses>
-          <PostNotesURL>{PostNotesURL}</PostNotesURL>
         </block:Caption>
         {/block:Caption}
         <LinkURL>{LinkURL}</LinkURL>
@@ -365,6 +365,21 @@ Made by Icelab and Jim Whimpey
         <Beats>{Beats}</Beats>
         <Timestamp>{Timestamp}</Timestamp>
         <TimeAgo>{TimeAgo}</TimeAgo>
+		    {block:HasTags}
+		    <!-- Tags -->
+		    <block:HasTags>
+		      <block:Tags>
+		        {block:Tags}
+		        <item>
+		          <Tag>{Tag}</Tag>
+		          <URLSafeTag>{URLSafeTag}</URLSafeTag>
+		          <TagURL>{TagURL}</TagURL>
+		          <TagURLChrono>{TagURLChrono}</TagURLChrono>
+		        </item>
+		        {/block:Tags}
+		      </block:Tags>
+		    </block:HasTags>
+		    {/block:HasTags}
       </block:Photo>
     {/block:Photo}
     

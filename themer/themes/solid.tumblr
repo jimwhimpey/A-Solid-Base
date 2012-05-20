@@ -1,23 +1,13 @@
 {block:tumblrThemr}
 
-			<div id="header">
-				<h1><a href="/">A Solid Base</a></h1>
-				{block:Description}
-					<p>{Description}</p>
-				{/block:Description}
-				<h2>Colours</h2>
-				<ul class="colours">
-					<li class="red"><a href="/tagged/red">Red</a></li>
-					<li class="pink"><a href="/tagged/pink">Pink</a></li>
-					<li class="purple"><a href="/tagged/purple">Purple</a></li>
-					<li class="blue"><a href="/tagged/blue">Blue</a></li>
-					<li class="green"><a href="/tagged/green">Green</a></li>
-					<li class="yellow"><a href="/tagged/yellow">Yellow</a></li>
-					<li class="orange"><a href="/tagged/orange">Orange</a></li>
-					<li class="brown"><a href="/tagged/brown">Brown</a></li>
-					<li class="black"><a href="/tagged/black">Black</a></li>
-					<li class="white"><a href="/tagged/white">White</a></li>
-				</ul>
+	<link rel="stylesheet" href="themes/solid/style.css" type="text/css" media="screen" charset="utf-8" />
+
+		<div id="header">
+			<h1><a href="/">A Solid Base</a></h1>
+			{block:Description}
+				<p>{Description}</p>
+			{/block:Description}
+			<div class="styles-holder">
 				<h2>Styles</h2>
 				<ul class="styles">
 					<li><a href="/tagged/abstract">abstract</a></li>
@@ -40,92 +30,117 @@
 					<li><a href="/tagged/fire">fire</a></li>
 					<li><a href="/tagged/macro">macro</a></li>
 				</ul>
-				<h3>Make a <a href="/submit/photo">suggestion</a></h3>
+			</div>
+			<div class="colours-holder">
+				<h2>Colours</h2>
+				<ul class="colours">
+					<li class="red"><a href="/tagged/red">Red</a></li>
+					<li class="pink"><a href="/tagged/pink">Pink</a></li>
+					<li class="purple"><a href="/tagged/purple">Purple</a></li>
+					<li class="blue"><a href="/tagged/blue">Blue</a></li>
+					<li class="green"><a href="/tagged/green">Green</a></li>
+					<li class="yellow"><a href="/tagged/yellow">Yellow</a></li>
+					<li class="orange"><a href="/tagged/orange">Orange</a></li>
+					<li class="brown"><a href="/tagged/brown">Brown</a></li>
+					<li class="black"><a href="/tagged/black">Black</a></li>
+					<li class="white"><a href="/tagged/white">White</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+		
+			{block:Posts}
+	
+				{block:Photo}
+		
+					<div class="post">
+						<a href="{LinkURL}" class="link"> 
+							<div class="display">
+								{block:HighRes}
+									<div class="image" style="background-image: url({PhotoURL-HighRes});"></div>
+								{/block:HighRes}
+							</div>
+							<div class="ipad">
+								<div class="image" style="background-image: url({PhotoURL-500});"></div>
+							</div>
+							<div class="iphone">
+								<div class="image" style="background-image: url({PhotoURL-250});"></div>
+							</div>
+						</a>
+						<div class="meta">
+							<a class="permalink" href="{Permalink}">&infin;</a> 
+							{block:Caption}
+								<span class="attribution">{Caption}</span>
+							{/block:Caption}
+							<span class="more">More 
+								{block:HasTags}
+									{block:Tags}
+										<a href="{TagURL}">{Tag}</a>
+									{/block:Tags}
+								{/block:HasTags}
+							</span>
+						</div>
+					</div>
+				
+					{block:PostNotes}
+						<div class="notes">
+							{PostNotes}
+						</div>
+					{/block:PostNotes}
+		
+				{/block:Photo}
+			
+				{block:Text}
+				
+					<div class="text">
+						{block:Title}
+							<h2>{Title}</h2>
+						{/block:Title}
+						{Body}
+					</div>
+				
+				{/block:Text}
+		
+			{/block:Posts}
+
+		</div>
+	
+		{block:Pagination}
+
+			<div id="navigation">
+
+				{block:NextPage}
+					<a href="{NextPage}" id="nav-older"><span>&larr;</span> Older</a>
+				{/block:NextPage}
+
+				{block:PreviousPage}
+					<a href="{PreviousPage}" id="nav-newer">Newer <span>&rarr;</span></a>
+				{/block:PreviousPage}
+
 			</div>
 
-			<div id="content">
+		{/block:Pagination}
+
+		{block:PermalinkPagination}
 		
-				{block:Posts}
+			<div id="navigation">
 	
-					{block:Photo}
-		
-						<div class="post">
-							<a href="{LinkURL}" class="link"> 
-								<img src="{PhotoURL-500}" class="wallpaper" alt="Wallpaper" />
-							</a>
-							<div class="meta">
-								<div class="permalink"><a href="{Permalink}">&infin;</a></div>
-								<div class="attribution">{Caption}</div>
-								<div class="more">More 
-									{block:HasTags}
-										{block:Tags}
-											<a href="{TagURL}">{Tag}</a>
-										{/block:Tags}
-									{/block:HasTags}
-								</div>
-							</div>
-						</div>
-				
-						{block:PostNotes}
-							<div class="notes">
-								{PostNotes}
-							</div>
-						{/block:PostNotes}
-		
-					{/block:Photo}
-			
-					{block:Text}
-				
-						<div class="text">
-							{block:Title}
-								<h2>{Title}</h2>
-							{/block:Title}
-							{Body}
-						</div>
-				
-					{/block:Text}
-		
-				{/block:Posts}
+				{block:PreviousPost}
+					<a href="{PreviousPost}" id="nav-older"><span>&larr;</span> Older</a>
+	            {/block:PreviousPost}
+
+	            {block:NextPost}
+					<a href="{NextPost}" id="nav-newer">Newer <span>&rarr;</span></a>
+	            {/block:NextPost}
 
 			</div>
 	
-			{block:Pagination}
-
-				<div id="navigation">
-
-					{block:NextPage}
-						<a href="{NextPage}" id="nav-older"><span>&larr;</span> Older</a>
-					{/block:NextPage}
-
-					{block:PreviousPage}
-						<a href="{PreviousPage}" id="nav-newer">Newer <span>&rarr;</span></a>
-					{/block:PreviousPage}
-
-				</div>
-
-			{/block:Pagination}
-
-			{block:PermalinkPagination}
-		
-				<div id="navigation">
-	
-					{block:PreviousPost}
-						<a href="{PreviousPost}" id="nav-older"><span>&larr;</span> Older</a>
-		            {/block:PreviousPost}
-
-		            {block:NextPost}
-						<a href="{NextPost}" id="nav-newer">Newer <span>&rarr;</span></a>
-		            {/block:NextPost}
-
-				</div>
-	
-			{/block:PermalinkPagination}
+		{/block:PermalinkPagination}
 			
-			<div id="footer"><a href="/" class="site">A solid base</a> to build on.</div>
+		<div id="footer"><a href="/" class="site">A solid base</a> to build on.</div>
 			
-			<div style="clear: both; width: 100%;"></div>
-
-
+		<div style="clear: both; width: 100%;"></div>
 
 	
 {/block:tumblrThemr} 
