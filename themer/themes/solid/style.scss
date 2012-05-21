@@ -399,19 +399,68 @@
 			FOOTER
 		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 	
-	#footer {
-		display: none;
-		font-size: 16px;
-		text-shadow: #fff 1px 1px 0;
-		color: #111;
-		width: 500px;
-		float: left;
-		a {
-			font-size: 18px;
-			font-family: 'Chunk', Georgia, Times, serif;
-			text-transform: uppercase;
+		#footer {
+			display: none;
+			font-size: 16px;
+			text-shadow: #fff 1px 1px 0;
+			color: #111;
+			width: 500px;
+			float: left;
+			a {
+				font-size: 18px;
+				font-family: 'Chunk', Georgia, Times, serif;
+				text-transform: uppercase;
+			}
 		}
-	}
+	
+	
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+			SPECIFIC iPAD STYLES
+		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */	
+		
+		@media only screen and (device-width: 768px) {
+		  
+			html body {
+				width: 700px;
+				margin: 70px auto;
+				#header {
+					margin-bottom: 70px;
+					p { font-size: 16px; }
+					.styles-holder, .colour-holder { float: none; }
+					.styles-holder { margin-bottom: 15px; }
+				}
+				.ipad, .iphone { display: none; }
+			 	#content .post {
+					margin: 0 0 100px 0;
+					.display {
+						float: none;
+						width: 694px;
+						height: 360px;
+						margin: 0 0 15px 0;
+						background: none;
+						border: 3px solid #000;
+						.image {
+							position: relative;
+							width: 694px;
+							height: 360px;
+							top: auto;
+							left: auto;
+							position: absolute;
+							background-repeat: no-repeat;
+							background-position: top left;
+							background-size: 700px;
+							.furniture { display: none; }
+						}
+					}
+					.meta { 
+						position: relative;
+						bottom: 0;
+						right: 0;
+						text-align: right;
+					}
+				}
+			}
+		}
 	
 	
 	
