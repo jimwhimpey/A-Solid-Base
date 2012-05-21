@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+			<title>{Title} - The best wallpaper. For your computer, tablet or phone. By Jim Whimpey.</title>
+
+			<link rel="shortcut icon" href="{Favicon}">
+			<link rel="alternate" type="application/rss+xml" href="{RSS}">
+			<link rel="stylesheet" href="http://static.tumblr.com/ttz4bff/kxlm4e75l/style.css" type="text/css" media="screen" charset="utf-8" />
+			<link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1.0" />
+
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<h1><a href="/">A Solid Base</a></h1>
+			{block:Description}
+				<p>{Description}</p>
+			{/block:Description}
+			<div class="styles-holder">
+				<h2>Styles</h2>
+				<ul class="styles">
+					<li><a href="/tagged/abstract">abstract</a></li>
+					<li><a href="/tagged/rendering">rendering</a></li>
+					<li><a href="/tagged/texture">texture</a></li>
+					<li><a href="/tagged/space">space</a></li>
+					<li><a href="/tagged/nature">nature</a></li>
+					<li><a href="/tagged/animals">animals</a></li>
+					<li><a href="/tagged/focal+point">focal point</a></li>
+					<li><a href="/tagged/snow">snow</a></li>
+					<li><a href="/tagged/bokeh">bokeh</a></li>
+					<li><a href="/tagged/water">water</a></li>
+					<li><a href="/tagged/wood">wood</a></li>
+					<li><a href="/tagged/landscape">landscape</a></li>
+					<li><a href="/tagged/city">city</a></li>
+					<li><a href="/tagged/night">night</a></li>
+					<li><a href="/tagged/light">light</a></li>
+					<li><a href="/tagged/rain">rain</a></li>
+					<li><a href="/tagged/sunset">sunset</a></li>
+					<li><a href="/tagged/fire">fire</a></li>
+					<li><a href="/tagged/macro">macro</a></li>
+				</ul>
+			</div>
+			<div class="colours-holder">
+				<h2>Colours</h2>
+				<ul class="colours">
+					<li class="red"><a href="/tagged/red">Red</a></li>
+					<li class="pink"><a href="/tagged/pink">Pink</a></li>
+					<li class="purple"><a href="/tagged/purple">Purple</a></li>
+					<li class="blue"><a href="/tagged/blue">Blue</a></li>
+					<li class="green"><a href="/tagged/green">Green</a></li>
+					<li class="yellow"><a href="/tagged/yellow">Yellow</a></li>
+					<li class="orange"><a href="/tagged/orange">Orange</a></li>
+					<li class="brown"><a href="/tagged/brown">Brown</a></li>
+					<li class="black"><a href="/tagged/black">Black</a></li>
+					<li class="white"><a href="/tagged/white">White</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+		
+			{block:TagPage}
+				<h2 class="tag-heading">Tag: <span>{Tag}</span></h2>
+			{/block:TagPage}
+		
+			{block:Posts}
+	
+				{block:Photo}
+		
+					<div class="post">
+						<a href="{LinkURL}" class="link"> 
+							<div class="display">
+								{block:HighRes}
+									<div class="image" style="background-image: url({PhotoURL-HighRes});">
+										<div class="furniture"></div>
+									</div>
+								{/block:HighRes}
+							</div>
+							<div class="ipad">
+								<div class="image" style="background-image: url({PhotoURL-500});">
+									<div class="lock"></div>
+								</div>
+							</div>
+							<div class="iphone">
+								<div class="image" style="background-image: url({PhotoURL-250});">
+									<div class="lock"></div>
+								</div>
+							</div>
+						</a>
+						<div class="meta">
+							<a class="permalink" href="{Permalink}">&infin;</a> 
+							{block:Caption}
+								<span class="attribution">{Caption}</span>
+							{/block:Caption}
+							<span class="more">More 
+								{block:HasTags}
+									{block:Tags}
+										<a href="{TagURL}">{Tag}</a>
+									{/block:Tags}
+								{/block:HasTags}
+							</span>
+						</div>
+					</div>
+				
+					{block:PostNotes}
+						<div class="notes">
+							{PostNotes}
+						</div>
+					{/block:PostNotes}
+		
+				{/block:Photo}
+			
+				{block:Text}
+				
+					<div class="text">
+						{block:Title}
+							<h2>{Title}</h2>
+						{/block:Title}
+						{Body}
+					</div>
+				
+				{/block:Text}
+		
+			{/block:Posts}
+
+		</div>
+	
+		{block:Pagination}
+
+			<div id="navigation">
+
+				{block:NextPage}
+					<a href="{NextPage}" id="nav-older"><span>&larr;</span> Previous Page</a>
+				{/block:NextPage}
+
+				{block:PreviousPage}
+					<a href="{PreviousPage}" id="nav-newer">Next Page <span>&rarr;</span></a>
+				{/block:PreviousPage}
+
+			</div>
+
+		{/block:Pagination}
+
+		{block:PermalinkPagination}
+		
+			<div id="navigation">
+	
+				{block:PreviousPost}
+					<a href="{PreviousPost}" id="nav-older"><span>&larr;</span> Previous Post</a>
+				{/block:PreviousPost}
+
+				{block:NextPost}
+					<a href="{NextPost}" id="nav-newer">Next Post <span>&rarr;</span></a>
+				{/block:NextPost}
+
+			</div>
+	
+		{/block:PermalinkPagination}
+			
+		<div id="footer"><a href="/" class="site">A solid base</a> to build on.</div>
+
+	</body>
+		
+</html>
