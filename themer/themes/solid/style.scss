@@ -219,30 +219,45 @@
 						top: 27px;
 						left: 27px;
 						background-size: 600px;
+						.furniture {
+							width: 497px;
+							height: 312px;
+							background: url(display-furniture.png) no-repeat top center;
+						}
 					}
 				}
 				.ipad {
 					width: 231px;
 					height: 300px;
-					margin: 15px 55px 0 0;
+					margin: 35px 55px 0 0;
 					background: url(ipad.png);
 					.image {
 						width: 183px;
 						height: 245px;
 						top: 28px;
 						left: 24px;
+						.lock {
+							width: 183px;
+							height: 245px;
+							background: url(ipad-lock.png) no-repeat center center;
+						}
 					}
 				}
 				.iphone {
 					width: 112px;
 					height: 220px;
-					margin: 50px 0 0 0;
+					margin: 80px 0 0 0;
 					background: url(iphone.png);
 					.image {
 						width: 98px;
 						height: 148px;
 						top: 37px;
 						left: 8px;
+						.lock {
+							width: 98px;
+							height: 148px;
+							background: url(iphone-lock.png) no-repeat center center;
+						}
 					}
 				}
 				a.link { display: block; }
