@@ -270,7 +270,7 @@
 					.permalink {
 						display: inline-block;
 						width: 18px;
-						height: 20px;
+						height: 18px;
 						color: #999;
 						background: #666;
 						border: 1px solid #666;
@@ -281,6 +281,7 @@
 						margin: 0 7px 0 0;
 						font-family: Georgia, Times, serif;
 						font-size: 20px;
+						text-align: center;
 						&:hover {
 							color: #FFF;
 							background: #444;
@@ -338,60 +339,61 @@
 			TEXT POST for the SUBMIT PAGE
 		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 	
-	.text { width: 100%; overflow: hidden; }
+		.text { width: 100%; overflow: hidden; }
 	
-	.text h2 {
-		font-family: Helvetica, Arial, serif;
-		font-weight: bold;
-		font-size: 22px;
-		margin: 0 0 10px 0;
-		}
+		.text h2 {
+			font-family: Helvetica, Arial, serif;
+			font-weight: bold;
+			font-size: 22px;
+			margin: 0 0 10px 0;
+			}
 	
-	.text p {
-		font-size: 14px;
-		line-height: 1.6em;
-		margin: 0 0 20px 0;
-		}
+		.text p {
+			font-size: 14px;
+			line-height: 1.6em;
+			margin: 0 0 20px 0;
+			}
 	
 
 /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 			NOTES
 		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-	.notes {
-		clear: left;
-		line-height: 1.5em;
-		font-size: 13px;
-		margin: 20px 0 50px 0;
-		color: #464646;
-		opacity: 0.9;
-		}
-		
-		.notes:hover { opacity: 1; }
-	
-		.notes li { margin: 0 0 10px 0; }
-	
-		.notes a { color: #004080; }
-	
-			.notes a:hover { border-bottom: 1px solid #004080; }
-	
-		.notes img {
-			border: 1px solid #000;
-			position: relative;
-			top: 5px;
+		.notes {
+			display: none;
+			clear: left;
+			line-height: 1.5em;
+			font-size: 13px;
+			margin: 20px 0 50px 0;
+			color: #464646;
+			opacity: 0.9;
 			}
 		
-		.notes blockquote {
-			margin: 10px 0 0 25px;
-			border-left: 1px solid #BABABA;
-			padding: 0 0 0 10px;
-			font-style: italic;
-			color: #828282;
-			}
+			.notes:hover { opacity: 1; }
+	
+			.notes li { margin: 0 0 10px 0; }
+	
+			.notes a { color: #004080; }
+	
+				.notes a:hover { border-bottom: 1px solid #004080; }
+	
+			.notes img {
+				border: 1px solid #000;
+				position: relative;
+				top: 5px;
+				}
 		
-			.notes blockquote a { color: #3B7CB6; }
+			.notes blockquote {
+				margin: 10px 0 0 25px;
+				border-left: 1px solid #BABABA;
+				padding: 0 0 0 10px;
+				font-style: italic;
+				color: #828282;
+				}
 		
-				.notes blockquote a:hover { border-bottom: 1px solid #3B7CB6; }
+				.notes blockquote a { color: #3B7CB6; }
+		
+					.notes blockquote a:hover { border-bottom: 1px solid #3B7CB6; }
 	
 	
 	
